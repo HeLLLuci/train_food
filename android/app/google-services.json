@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "669615585993",
+    "project_id": "fir-auth-project-21fad",
+    "storage_bucket": "fir-auth-project-21fad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669615585993:android:30e3e79fcfc4b040d8eb18",
+        "android_client_info": {
+          "package_name": "com.example.train_food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669615585993-rtq1vj58pqe289k1ojk9g4aa5l401hs2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI7iCa2kAgcLeVnm84CdOy9Rgn6VFJnIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669615585993-rtq1vj58pqe289k1ojk9g4aa5l401hs2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
