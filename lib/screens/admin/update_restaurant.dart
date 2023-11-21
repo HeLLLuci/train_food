@@ -83,7 +83,7 @@ class _UpdateRestaurantState extends State<UpdateRestaurant> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      appBar: myAppBar("Update Restaurant"),
+      appBar: myAppBar("Update Shop"),
       backgroundColor: allBgClr,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -99,14 +99,14 @@ class _UpdateRestaurantState extends State<UpdateRestaurant> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   DataInputCard(
-                    name: "Restaurant Name",
+                    name: "Shop Name",
                     controller: restaurantNameController,
                   ),
                   SizedBox(
                     height: size.height * 0.02,
                   ),
                   DataInputCard(
-                    name: "Railway Station Name",
+                    name: "City",
                     controller: stationNameController,
                   ),
                   SizedBox(

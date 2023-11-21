@@ -94,13 +94,13 @@ class _OrderTabViewState extends State<OrderTabView> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        "Item ${snapshot.data!.docs[index]['itemName'].toString()}",
+                                        "Item: ${snapshot.data!.docs[index]['itemName'].toString()}",
                                         style: orderCardItemNameTextStyle,
                                         overflow: TextOverflow.ellipsis,
                                         maxLines: 2,
                                       ),
                                       Text(
-                                        "Rs ${snapshot.data!.docs[index]['itemPrice'].toString()}",
+                                        "Rs. ${snapshot.data!.docs[index]['itemPrice'].toString()}",
                                         style: cardInfoTextStyle,
                                         overflow: TextOverflow.ellipsis,
                                         maxLines: 2,
@@ -115,13 +115,13 @@ class _OrderTabViewState extends State<OrderTabView> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        "Quantity ${snapshot.data!.docs[index]['quantity'].toString()}",
+                                        "Quantity: ${snapshot.data!.docs[index]['quantity'].toString()}",
                                         style: cardInfoTextStyle,
                                         overflow: TextOverflow.ellipsis,
                                         maxLines: 2,
                                       ),
                                       Text(
-                                        "Total Price Rs ${snapshot.data!.docs[index]['totalPrice'].toString()}",
+                                        "Total Price Rs: ${snapshot.data!.docs[index]['totalPrice'].toString()}",
                                         style: orderCardTotalPriceTextStyle,
                                         overflow: TextOverflow.ellipsis,
                                         maxLines: 2,
@@ -156,13 +156,13 @@ class _OrderTabViewState extends State<OrderTabView> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        "Train Name ${snapshot.data!.docs[index]['trainName'].toString()}",
+                                        "AddressLine 1: ${snapshot.data!.docs[index]['trainName'].toString()}",
                                         style: cardInfoTextStyle,
                                         overflow: TextOverflow.ellipsis,
                                         maxLines: 3,
                                       ),
                                       Text(
-                                        "Seat No ${snapshot.data!.docs[index]['seatNo'].toString()}",
+                                        "Pin Code: ${snapshot.data!.docs[index]['seatNo'].toString()}",
                                         style: cardInfoTextStyle,
                                         overflow: TextOverflow.ellipsis,
                                         maxLines: 2,
@@ -177,7 +177,7 @@ class _OrderTabViewState extends State<OrderTabView> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        "Compartment ${snapshot.data!.docs[index]['compartment'].toString()}",
+                                        "AddressLine 2: ${snapshot.data!.docs[index]['compartment'].toString()}",
                                         style: cardInfoTextStyle,
                                         overflow: TextOverflow.ellipsis,
                                         maxLines: 2,
@@ -232,7 +232,7 @@ class _OrderTabViewState extends State<OrderTabView> {
                                     // width: size.width * 0.45,
                                     decoration: BoxDecoration(color: orderCardClr),
                                     child: Text(
-                                      "Delivery time ${snapshot.data!.docs[index]['itemTime'].toString()} min",
+                                      "Delivery time: ${snapshot.data!.docs[index]['itemTime'].toString()} min",
                                       style: orderCardItemNameTextStyle,
                                       overflow: TextOverflow.ellipsis,
                                       maxLines: 2,

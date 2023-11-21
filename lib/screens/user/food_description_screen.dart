@@ -5,7 +5,6 @@ import 'package:train_food/screens/admin/all_img_card.dart';
 import 'package:train_food/widgets/button.dart';
 import '../../utils/decoration.dart';
 import '../../utils/toast_msg.dart';
-import '../../widgets/my_card.dart';
 import 'food_order_screen.dart';
 
 class FoodDescriptionScreen extends StatefulWidget {
@@ -162,7 +161,7 @@ class _FoodDescriptionScreenState extends State<FoodDescriptionScreen> {
                     height: 10,
                   ),
                   Text(
-                    "This dish will be dilevered in ${widget.itemTime} minuts",
+                    "This item will be dilevered in ${widget.itemTime} Days",
                     style: const TextStyle(
                         color: Color(0xFF474E68),
                         fontSize: 16,
@@ -183,7 +182,7 @@ class _FoodDescriptionScreenState extends State<FoodDescriptionScreen> {
                   ),
                   const Divider(color: Colors.black, thickness: 1),
                   const Text(
-                    "Recommended dishes",
+                    "Recommended items",
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                   ),
                 ],

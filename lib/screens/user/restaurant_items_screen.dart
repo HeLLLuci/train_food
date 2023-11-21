@@ -7,19 +7,19 @@ import 'package:train_food/widgets/search_bar.dart';
 import '../../utils/decoration.dart';
 import 'food_description_screen.dart';
 
-class RestaurantInfoScreen extends StatefulWidget {
+class ShopInfoScreen extends StatefulWidget {
   final String restaurantsUid;
   final String restaurantName;
   final bool restaurantClosed;
-  const RestaurantInfoScreen(
+  const ShopInfoScreen(
       {Key? key, required this.restaurantsUid, required this.restaurantClosed, required this.restaurantName})
       : super(key: key);
 
   @override
-  State<RestaurantInfoScreen> createState() => _RestaurantInfoScreenState();
+  State<ShopInfoScreen> createState() => _ShopInfoScreenState();
 }
 
-class _RestaurantInfoScreenState extends State<RestaurantInfoScreen> {
+class _ShopInfoScreenState extends State<ShopInfoScreen> {
   TextEditingController searchController = TextEditingController();
   String searchQuery = '';
 

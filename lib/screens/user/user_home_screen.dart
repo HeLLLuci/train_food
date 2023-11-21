@@ -39,7 +39,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: myAppBar("Train Food"),
+      appBar: myAppBar("Infa-Care"),
         drawer: SafeArea(
           child: Drawer(
             backgroundColor: allBgClr,
@@ -62,9 +62,10 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                   ),
                   margin: EdgeInsets.zero,
                   currentAccountPicture: const CircleAvatar(
-                    backgroundImage: AssetImage("assets/images/logo.jpg"),
+                    backgroundImage: AssetImage("assets/images/Infa-Care logo.png"),
+                    backgroundColor: Colors.white,
                   ),
-                  accountName: const Text("Enjoy your journey",style: TextStyle(fontSize: 18,color: Colors.black)),
+                  accountName: const Text("Happy Shopping",style: TextStyle(fontSize: 18,color: Colors.black)),
                   accountEmail: const Text(""),
                 ),
                 const SizedBox(height: 20,),
@@ -93,7 +94,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            MySearchBar(searchController: searchController, hintText: "Search stations",onChanged: (p0) {setState(() {});},),
+            MySearchBar(searchController: searchController, hintText: "Search shops",onChanged: (p0) {setState(() {});},),
             CarouselSlider(
               options: CarouselOptions(
                 height: 200,
@@ -131,10 +132,10 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
             const SizedBox(height: 20,),
             const Padding(
               padding: EdgeInsets.only(left: 10),
-              child: Text("Explore Restaurants",style: TextStyle(fontSize: 22,fontWeight: FontWeight.w500,color: Colors.black),),
+              child: Text("Explore Essentials",style: TextStyle(fontSize: 22,fontWeight: FontWeight.w500,color: Colors.black),),
             ),
             const Padding(
-              padding: EdgeInsets.only(right: 170.0,left: 10),
+              padding: EdgeInsets.only(right: 200.0,left: 10),
               child: Divider(
                 color: Colors.black,
                 thickness: 3,
@@ -156,7 +157,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                     return
                         Center(
                           child: Text(
-                            "No Restaurant Found",
+                            "No Shop Found",
                             style: stationTextStyle,
                           ),
                     );
@@ -173,7 +174,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(builder: (context) =>
-                                      RestaurantInfoScreen(
+                                      ShopInfoScreen(
                                         restaurantsUid: snapshot.data!.docs[index]['Restaurant_uid'].toString(),
                                         restaurantClosed : snapshot.data!.docs[index]['Closed'],
                                           restaurantName: snapshot.data!.docs[index]['Restaurant_Name'].toString(),
@@ -199,7 +200,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                                   ),
                                   trailing: const CircleAvatar(
                                       radius: 30,
-                                      backgroundImage: AssetImage("assets/images/restaurant.png")
+                                      backgroundImage: AssetImage("assets/images/Infa-Care logo.png") //change trainling image after getting new image
                                   ),
                                 )
                             ),
@@ -213,7 +214,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(builder: (context) =>
-                                      RestaurantInfoScreen(
+                                      ShopInfoScreen(
                                         restaurantsUid: snapshot.data!.docs[index]['Restaurant_uid'].toString(),
                                         restaurantClosed : snapshot.data!.docs[index]['Closed'],
                                         restaurantName: snapshot.data!.docs[index]['Restaurant_Name'].toString(),

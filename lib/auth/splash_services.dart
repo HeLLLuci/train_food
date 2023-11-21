@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:train_food/screens/admin/admin_home_screen.dart';
+import 'package:train_food/screens/user/Home_Screen.dart';
 import 'package:train_food/screens/user/user_home_screen.dart';
 import '../utils/toast_msg.dart';
 import 'login_page.dart';
@@ -31,7 +32,7 @@ class SplashServices {
           Navigator.pushReplacement(
               context,
               MaterialPageRoute(
-                builder: (context) => UserHomeScreen(),
+                builder: (context) => HomeScreen_(),
               ));
         }
         else {

@@ -161,13 +161,13 @@ class _AllOrdersScreenState extends State<AllOrdersScreen> {
                                       CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          "Train Name ${snapshot.data!.docs[index]['trainName'].toString()}",
+                                          "Address 1 ${snapshot.data!.docs[index]['trainName'].toString()}",
                                           style: cardInfoTextStyle,
                                           overflow: TextOverflow.ellipsis,
                                           maxLines: 3,
                                         ),
                                         Text(
-                                          "Seat No ${snapshot.data!.docs[index]['seatNo'].toString()}",
+                                          "Pin Code ${snapshot.data!.docs[index]['seatNo'].toString()}",
                                           style: cardInfoTextStyle,
                                           overflow: TextOverflow.ellipsis,
                                           maxLines: 2,
@@ -182,7 +182,7 @@ class _AllOrdersScreenState extends State<AllOrdersScreen> {
                                       CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          "Compartment ${snapshot.data!.docs[index]['compartment'].toString()}",
+                                          "Address 2 ${snapshot.data!.docs[index]['compartment'].toString()}",
                                           style: cardInfoTextStyle,
                                           overflow: TextOverflow.ellipsis,
                                           maxLines: 2,

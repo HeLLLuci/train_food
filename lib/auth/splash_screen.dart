@@ -29,11 +29,11 @@ class _SplashScreenState extends State<SplashScreen> {
           child: ListView(
               children: [
                 SizedBox(height: size.height*0.2,),
-            Image.asset("assets/images/logo.jpg"),
+            Image.asset("assets/images/Infa-Care logo.png"),
                 SizedBox(height: size.height*0.1,),
                 Center(
               child: Text(
-                "Eat With Test !",
+                "We help you to raise future",
                 style: stationTextStyle,
               ),
             ),

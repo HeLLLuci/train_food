@@ -100,18 +100,18 @@ class _FoodOrderScreenState extends State<FoodOrderScreen> {
                 SizedBox(height: size.height*0.02,),
                 DataInputCard(
                   height: textAndTextFieldHeight,
-                  name: "Your Train:",
+                  name: "Address Line 1:",
                   controller: trainController,
                 ),
                 SizedBox(height: size.height*0.02,),
                 DataInputCard(
                   height: textAndTextFieldHeight,
-                  name: "Your Compartment:",
+                  name: "Address Line 2:",
                   controller: compartmentController,
                 ),
                 SizedBox(height: size.height*0.02,),
                 DataInputCard(
-                  name: "Your seat no:",
+                  name: "Zip code(Pin Code):",
                   height: textAndTextFieldHeight,
                   keyBoardType: TextInputType.number,
                   controller: seatController,

@@ -197,7 +197,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 10.0),
             child: Row(
               children: [
-                const Text("Want to register restaurant?  ",style: TextStyle(fontSize: 16)),
+                const Text("Want to register shop?  ",style: TextStyle(fontSize: 16)),
                 DropdownButton(
                   value: defaultRole,
                   items: roleItems.map(buildItem).toList(),
@@ -220,12 +220,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   DataInputCard(
-                    name: "Restaurant Name",
+                    name: "Shop Name",
                     controller: restaurantNameController,
                   ),
                   SizedBox(height: size.height*0.02,),
                   DataInputCard(
-                    name: "Railway Station Name",
+                    name: "City",
                     controller: stationNameController,
                   ),
                   SizedBox(height: size.height*0.02,),

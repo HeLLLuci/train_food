@@ -80,9 +80,9 @@ class _AdminHomeScreenState extends State<AdminHomeScreen>  with SingleTickerPro
 
   showSnac() {
     Navigator.pop(context);
-    (restaurantClosed) ? Utils().showSnacBar(context, "Your restaurant is closed, you never get order by any consumers, "
+    (restaurantClosed) ? Utils().showSnacBar(context, "Your shop is closed, you never get order by any consumers, "
         "however you will get order when it will open.")
-    : Utils().showSnacBar(context, "Your restaurant is opened, you can start supplying orders.");
+    : Utils().showSnacBar(context, "Your shop is opened, you can start supplying orders.");
   }
 
   @override
@@ -134,7 +134,8 @@ class _AdminHomeScreenState extends State<AdminHomeScreen>  with SingleTickerPro
                 ),
                 margin: EdgeInsets.zero,
                 currentAccountPicture: const CircleAvatar(
-                  backgroundImage: AssetImage("assets/images/logo.jpg"),
+                  backgroundImage: AssetImage("assets/images/Infa-Care logo.png"),
+                  backgroundColor: Colors.white,
                 ),
                 accountName: Text(restaurantName,style: const TextStyle(fontSize: 18,color: Colors.black)),
                 accountEmail: const Text(""),
@@ -145,7 +146,7 @@ class _AdminHomeScreenState extends State<AdminHomeScreen>  with SingleTickerPro
                   Navigator.pop(context);
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const UpdateRestaurant(),));
                 },
-                title: const Text("Update Restaurant",style: TextStyle(fontSize: 16)),
+                title: const Text("Update Shop",style: TextStyle(fontSize: 16)),
                 leading: const Icon(Icons.edit_note,size: 30),
                 iconColor: Colors.black,
               ),
@@ -164,10 +165,10 @@ class _AdminHomeScreenState extends State<AdminHomeScreen>  with SingleTickerPro
                   closeOpenRestaurant(restaurantClosed);
                 },
                 title: (!isRegistering) ? ((!restaurantClosed)
-                    ?  const Text("Close Restaurant",style: TextStyle(fontSize: 16))
-                :  const Text("Open Restaurant",style: TextStyle(fontSize: 16)))
+                    ?  const Text("Close Shop",style: TextStyle(fontSize: 16))
+                :  const Text("Open Shop",style: TextStyle(fontSize: 16)))
                 : const LinearProgressIndicator(),
-                leading: const Icon(Icons.restaurant,),
+                leading: const Icon(Icons.shopping_bag,),
                 iconColor: Colors.black,
               ),
               ListTile(

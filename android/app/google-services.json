@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "669615585993",
-    "project_id": "fir-auth-project-21fad",
-    "storage_bucket": "fir-auth-project-21fad.appspot.com"
+    "project_number": "793305460393",
+    "project_id": "infa-care-2111",
+    "storage_bucket": "infa-care-2111.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:669615585993:android:30e3e79fcfc4b040d8eb18",
+        "mobilesdk_app_id": "1:793305460393:android:c6a6667b01818a7d7203b8",
         "android_client_info": {
-          "package_name": "com.example.train_food"
+          "package_name": "com.mustkeem.infa_care"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "669615585993-rtq1vj58pqe289k1ojk9g4aa5l401hs2.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCI7iCa2kAgcLeVnm84CdOy9Rgn6VFJnIo"
+          "current_key": "AIzaSyC5dKQ4qUw5D9piSVih2mcDZTmWSjpqDX8"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "669615585993-rtq1vj58pqe289k1ojk9g4aa5l401hs2.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
